@@ -5,6 +5,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+import { LandingPageData as lpd } from "@/lib/constants";
+
 const CallToActionSection = () => {
   return (
     <div className="relative py-24">
@@ -25,27 +27,26 @@ const CallToActionSection = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 md:mr-10">
             <h2 className="text-2xl font-bold text-white">
-              Find Your Dream Rental Property
+              {lpd.callToActionSection.title}
             </h2>
           </div>
           <div>
             <p className="text-white mb-3">
-              Discover a wide range of rental properties in your desired
-              location.
+              {lpd.callToActionSection.subTitle}
             </p>
             <div className="flex justify-center md:justify-start gap-4">
               <button
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="inline-block text-primary-700 bg-white rounded-lg px-6 py-3 font-semibold hover:bg-primary-500 hover:text-primary-50"
               >
-                Search
+                {lpd.callToActionSection.searchButtonText}
               </button>
               <Link
                 href="/signup"
                 className="inline-block text-white bg-secondary-500 rounded-lg px-6 py-3 font-semibold hover:bg-secondary-600"
                 scroll={false}
               >
-                Sign Up
+                {lpd.callToActionSection.signUpButtonText}
               </Link>
             </div>
           </div>

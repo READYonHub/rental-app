@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
 
+import { navbarData as nd } from '@/lib/constants'
+
 const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-50 shadow-xl" style={{ height: `${NAVBAR_HEIGHT}px` }}>
@@ -18,22 +20,22 @@ const Navbar = () => {
           >
             <div className="flex items-center gap-3">
               <Image
-                src="/logo.svg"
+                src={nd.logoSrc}
                 alt="Rentful Logo"
                 width={30}
                 height={30}
                 className="w-6 h-6"
               />
               <div className="text-xl font-bold">
-                Nav
+                {nd.titleLeftPiece}
                 <span className="text-secondary-500 font-light hover:!text-primary-300">
-                  bar
+                  {nd.titleRightPiece}
                 </span>
               </div>
             </div>
           </Link>
           <p className="text-primary-200 hidden md:block">
-            Discover perfect rental apartment with our advanced search
+            {nd.desc}
           </p>
         </div>
 
@@ -44,7 +46,7 @@ const Navbar = () => {
               variant="outline"
               className="text-white border-white bg-transparent hover:bg-white hover:text-primary-700 rounded-lg"
             >
-              Sign in
+              {nd.signIn}
             </Button>
           </Link>
           <Link href="/signup">
@@ -52,7 +54,7 @@ const Navbar = () => {
               variant="secondary"
               className="text-white bg-secondary-600 hover:bg-white hover:text-primary-700 rounded-lg"
             >
-              Sign Up
+              {nd.signOut}
             </Button>
           </Link>
         </div>

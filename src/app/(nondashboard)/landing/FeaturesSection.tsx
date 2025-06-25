@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
+import { LandingPageData as lpd } from "@/lib/constants";
+
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -36,7 +38,7 @@ const FeaturesSection = () => {
           variants={itemVariants}
           className="text-3xl font-bold text-center mb-12 w-full sm:w-2/3 mx-auto"
         >
-          Quickly find the home you want using our effective search filters!
+          {lpd.featuresSection.title}
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
           {[0, 1, 2].map((index) => (
@@ -45,20 +47,28 @@ const FeaturesSection = () => {
                 imageSrc={`/landing-search${3 - index}.png`}
                 title={
                   [
-                    "Trustworthy and Verified Listings",
-                    "Browse Rental Listings with Ease",
-                    "Simplify Your Rental Search with Advanced",
+                    lpd.featuresSection.items.item1.itemTitle,
+                    lpd.featuresSection.items.item2.itemTitle,
+                    lpd.featuresSection.items.item3.itemTitle,
                   ][index]
                 }
                 description={
                   [
-                    "Discover the best rental options with user reviews and ratings.",
-                    "Get access to user reviews and ratings for a better understanding of rental options.",
-                    "Find trustworthy and verified rental listings to ensure a hassle-free experience.",
+                    lpd.featuresSection.items.item1.itemDesc,
+                    lpd.featuresSection.items.item2.itemDesc,
+                    lpd.featuresSection.items.item3.itemDesc,
                   ][index]
                 }
-                linkText={["Explore", "Search", "Discover"][index]}
-                linkHref={["/explore", "/search", "/discover"][index]}
+                linkText={[
+                  lpd.featuresSection.items.item1.itemLinkText,
+                  lpd.featuresSection.items.item2.itemLinkText,
+                  lpd.featuresSection.items.item3.itemLinkText,
+                ][index]}
+                linkHref={[
+                  lpd.featuresSection.items.item1.itemLinkHref,
+                  lpd.featuresSection.items.item2.itemLinkHref,
+                  lpd.featuresSection.items.item3.itemLinkHref,
+                ][index]}
               />
             </motion.div>
           ))}

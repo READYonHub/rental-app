@@ -134,3 +134,112 @@ export const testUsers = {
   },
   managerRole: "manager",
 };
+
+export const metaData = {
+  appName: "Utazásiroda",
+  appDesc:
+    "Ez egy utazásiroda alkalmazás, amely segít a felhasználóknak felfedezni és foglalni utazásokat.",
+};
+
+export const LandingPageData = {
+  heroSection: {
+    title: "Utazásiroda: A Te Utazásod Kezdete",
+    subTitle:
+      "Fedezd fel a világot velünk! Az Utazásiroda egy hely, ahol megtalálod a legjobb utazási ajánlatokat, szállásokat és élményeket.",
+    searchPlaceholder: "Keresés város, környék vagy cím szerint",
+    searchPlaceholderEmpty: "Itt tudsz keresni...",
+    searchButtonText: "Keresés",
+  },
+  featuresSection: {
+    title:
+      "Találd meg gyorsan a kívánt otthont hatékony keresési szűrőink segítségével!",
+    items: {
+      item1: {
+        itemTitle: "Megbízható és ellenőrzött hirdetések",
+        itemImgSrc: "/landing-search0.png",
+        itemDesc: "Megbízható és ellenőrzött hirdetések",
+        itemLinkText: "Fedezd fel",
+        itemLinkHref: "/explore",
+      },
+      item2: {
+        itemTitle: "Böngésszen könnyedén a kiadó ingatlanok hirdetései között",
+        itemImgSrc: "/landing-search1.png",
+        itemDesc:
+          "Hozzáférés a felhasználói véleményekhez és értékelésekhez a kiadó ingatlanok jobb megértése érdekében.",
+        itemLinkText: "Keresés",
+        itemLinkHref: "/search",
+      },
+      item3: {
+        itemTitle: "Egyszerűsítse a keresést a speciális funkciókkal",
+        itemImgSrc: "/landing-search2.png",
+        itemDesc:
+          "Találjon megbízható és ellenőrzött kiadó ingatlanokat a gondtalan élmény érdekében.",
+        itemLinkText: "Találd meg",
+        itemLinkHref: "/discover",
+      },
+    },
+  },
+  discoverSection: {
+    title: "Fedezd fel",
+    subTitle: "Találd meg álmaid bérleti ingatlanát még ma!",
+    desc: "Fedezd fel a legjobb bérleti ingatlanokat, és találd meg az ideális otthont, amely minden igényedet kielégíti. Kezdd el a keresést még ma, és fedezd fel álmaid bérleti ingatlanját!",
+    items: {
+      item1: {
+        itemTitle: "Ingatlanok keresése",
+        itemImgSrc: "/landing-icon-wand.png",
+        itemDesc:
+          "Böngésszen széles választékú bérleményeink között a kívánt helyen.",
+        itemLinkText: "Fedezd fel",
+        itemLinkHref: "/explore",
+      },
+      item2: {
+        itemTitle: "Foglalja le bérleményét",
+        itemImgSrc: "/landing-icon-calendar.png",
+        itemDesc:
+          "Miután megtalálta a tökéletes bérleményt, egyszerűen lefoglalhatja online, mindössze néhány kattintással.",
+        itemLinkText: "Keresés",
+        itemLinkHref: "/search",
+      },
+      item3: {
+        itemTitle: "Élvezze új otthonát",
+        itemImgSrc: "/landing-icon-heart.png",
+        itemDesc:
+          "Költözzön be új bérleményébe, és kezdje el élvezni álmai otthonát.",
+        itemLinkText: "Találd meg",
+        itemLinkHref: "/discover",
+      },
+    },
+  },
+  callToActionSection: {
+    title: "Találd meg álmaid bérleményét!",
+    subTitle: "Fedezzen fel széles választékban bérleményeket a kívánt helyen.",
+    searchButtonText: "Keresés",
+    signUpButtonText: "Regisztráció",
+  },
+  footerSection: {
+    title: "Utazásiroda",
+    nav: {
+      About: "Rólunk",
+      Contact: "Kapcsolat",
+      FAQ: "GYIK",
+      Privacy: "Adatvédelem",
+      Terms: "Felhasználási feltételek",
+    },
+    copiRight: {
+      name: "Utazásiroda",
+      rights: " Minden jog fenntartva.",
+      PrivacyPolicy: "Adatvédelmi irányelvek",
+      TermsofService: "Szolgáltatási feltételek",
+      CookiePolicy: "Süti szabályzat",
+    },
+  },
+};
+
+export const navbarData = {
+  titleLeftPiece: "Utazás",
+  titleRightPiece: "iroda",
+  logoSrc: "/logo.svg",
+  desc: "Fedezze fel a tökéletes bérlakást a részletes keresésünkkel",
+  signIn: "Bejelentkezés",
+  signOut: "Kijelentkezés",
+};

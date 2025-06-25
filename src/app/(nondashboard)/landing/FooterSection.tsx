@@ -9,6 +9,8 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { LandingPageData as lpd } from "@/lib/constants";
+
 const FooterSection = () => {
   return (
     <footer className="border-t border-gray-200 py-20">
@@ -16,25 +18,25 @@ const FooterSection = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4">
             <Link href="/" className="text-xl font-bold" scroll={false}>
-              RENTIFUL
+              {lpd.footerSection.title}
             </Link>
           </div>
           <nav className="mb-4">
             <ul className="flex space-x-6">
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href="/about">{lpd.footerSection.nav.About}</Link>
               </li>
               <li>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact">{lpd.footerSection.nav.Contact}</Link>
               </li>
               <li>
-                <Link href="/faq">FAQ</Link>
+                <Link href="/faq">{lpd.footerSection.nav.FAQ}</Link>
               </li>
               <li>
-                <Link href="/terms">Terms</Link>
+                <Link href="/terms">{lpd.footerSection.nav.Terms}</Link>
               </li>
               <li>
-                <Link href="/privacy">Privacy</Link>
+                <Link href="/privacy">{lpd.footerSection.nav.Privacy}</Link>
               </li>
             </ul>
           </nav>
@@ -69,10 +71,10 @@ const FooterSection = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-sm text-gray-500 flex justify-center space-x-4">
-          <span>© RENTiful. All rights reserved.</span>
-          <Link href="/privacy">Privacy Policy</Link>
-          <Link href="/terms">Terms of Service</Link>
-          <Link href="/cookies">Cookie Policy</Link>
+          <span>© {lpd.footerSection.copiRight.name}. {lpd.footerSection.copiRight.rights}</span>
+          <Link href="/privacy">{lpd.footerSection.copiRight.PrivacyPolicy}</Link>
+          <Link href="/terms">{lpd.footerSection.copiRight.TermsofService}</Link>
+          <Link href="/cookies">{lpd.footerSection.copiRight.CookiePolicy}</Link>
         </div>
       </div>
     </footer>

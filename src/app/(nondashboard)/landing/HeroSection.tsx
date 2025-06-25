@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 
+import { LandingPageData as lpd } from '@/lib/constants'
 const HeroSection = () => {
   return (
     <div className='relative h-screen'>
@@ -25,24 +26,25 @@ const HeroSection = () => {
         >
           <div className='max-w-4xl mx-auto px16 sm:px-12'>
             <h1 className='text-5xl font-bold text-white mb-4'>
-              Rentiful: Your Ultimate Rental Platform
+              {lpd.heroSection.title}
             </h1>
             <p className='text-xl text-white mb-8'>
-              Explore a wide range of rental properties, from apartments to vacation homes, all in one place. Rentiful connects you with landlords and property managers to make your rental experience seamless and efficient.</p>
+              {lpd.heroSection.subTitle}
+            </p>
           </div>
           <div className='flex justify-center'>
             <Input
               type='text'
-              value="search query"
+              value={lpd.heroSection.searchPlaceholderEmpty}
               onChange={() => { }}
-              placeholder='Search by city, neighborhood or address'
+              placeholder={lpd.heroSection.searchPlaceholder}
               className='w-full max-w-lg rounded-none rounded-l-xl border-none bg-white h-12'
             />
             <Button
               onClick={() => { }}
               className='bg-secondary-500 text-white rounded-none rounded-r-xl border-none hover:bg-secondary-600 h-12'
             >
-              Seach
+              {lpd.heroSection.searchButtonText}
             </Button>
           </div>
         </motion.div>
