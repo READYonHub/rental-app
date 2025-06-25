@@ -55,5 +55,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ```sh
 npx shadcn@latest add avatar badge button card checkbox command dialog dropdown-menu form input label navigation-menu radio-group select separator sheet sidebar skeleton slider sonner switch table tabs textarea tooltip
 
- npm i react-redux @reduxjs/toolkit dotenv --legacy-peer-deps
+npm i react-redux @reduxjs/toolkit dotenv --legacy-peer-deps
+
+npm i aws-amplify @aws-amplify/ui-react
 ```
